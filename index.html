@@ -8,7 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
     <title>Vite + Vue</title>
-    <script type="module" crossorigin src="/my-cv/assets/index-DQ8zXkv7.js"></script>
+    <!-- Suppress browser extension errors -->
+    <script>
+      // Suppress extension runtime errors that don't affect app functionality
+      window.addEventListener('error', function(e) {
+        if (e.message && e.message.includes('extension')) {
+          e.preventDefault();
+          return false;
+        }
+      });
+    </script>
+    <script type="module" crossorigin src="/my-cv/assets/index-BxZ-C_ie.js"></script>
     <link rel="stylesheet" crossorigin href="/my-cv/assets/index-mJToOAbR.css">
   </head>
   <body>
